@@ -24,9 +24,9 @@ Note: remember that the printed value of pi will be an estimate!
 import math
 
 t = int(input("I will estimate pi. How many terms should I use? "))
-d = int(input("ow many decimal places should I use in the result? "))
+d = int(input("How many decimal places should I use in the result? "))
 p = 4*sum([(((-1.0)**k)/(2*k+1)) for k in range(0,t)])
-print("(The approximate value of pi is {0:.{1}f})".format(p, d))
+print("The approximate value of pi is {0}".format(round(p,d)))
 
 """
 n = int(input("I will estimate e. How many terms should I use? "))
